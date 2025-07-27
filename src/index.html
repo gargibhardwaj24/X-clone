@@ -5,11 +5,12 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="./output.css" rel="stylesheet">
+  <link href="./utilities.css" rel="stylesheet">
 </head>
 
 <body class="bg-black">
   <div class="mainContainer flex flex-row">
-    <div class="firstColoumn w-[26vw] h-[100vh]  bg-black">
+    <div class="firstColoumn fixed w-[26vw] h-[100vh]  bg-black">
       <ul class="items mx-[80px] border-1 w-[20vw] h-[100vh]">
         <div class=" w-[18vw]  left-15 top-4">
           <li class="pb-2 ">
@@ -90,7 +91,8 @@
         </div>
     </div>
     </ul>
-    <div class="secondColoumn w-[40vw] h-[100vh] border-1 border-t-0 border-gray-700 bg-black">
+    <div
+      class="secondColoumn overflow-y-scroll scrollbar-none sticky left-90 w-[40vw] h-fit border-1 border-y border-gray-700 bg-black">
       <div class="top border-b-[1px] border-gray-700 w-full h-[fit] flex text-white">
         <div class="foryou w-[50%] h-full">
           <div class=" text-center pt-[10px] pb-[10px] font-bold">For you</div>
@@ -123,11 +125,221 @@
             <div class="icon w-fit px-[2px] content-center rounded-full h-[4vh]"><img src="icons/locate.svg"
                 class="w-[2vw] h-[2.5vh]" alt=""></div>
           </div>
-          <div class="post"><button class="bg-gray-400 text-gray-900 text-center px-[20px] pt-[4px] pb-[4px] mt-[15px] rounded-full font-bold">Post</button></div>
+          <div class="post"><button
+              class="bg-gray-400 text-gray-900 text-center px-[20px] pt-[4px] pb-[4px] mt-[15px] rounded-full font-bold">Post</button>
+          </div>
         </div>
       </div>
+      <div class="addPost flex text-white border-b-1 border-gray-700 mt-4">
+        <div class="profilePic ml-4 mr-2">
+          <img src="images/suryanshu.jpg" class=" w-[50px] h-[40px] rounded-full" alt="">
+        </div>
+        <div class="tweet mb-3">
+          <div class="nameBar flex justify-between w-full ">
+            <div class="userInfo flex gap-1.5">
+              <div class="name font-bold ">Suryanshu Mittal</div>
+              <div class="username font-extralight text-gray-400">@theabyssant
+                ·
+                21h</div>
+            </div>
+            <div class="icons flex gap-1 mr-3">
+              <div class="grok"><img class="invert w-[1vw] h-[2.5vh]" src="icons/grok.svg" alt=""></div>
+              <div class="more"><img class="invert w-[1vw] h-[2.5vh]" src="icons/more2.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="tweetText font-normal leading-5">My Sleep Duration is Inversely Proportional to how much I work on
+            the Creative Aspects of Anything</div>
+          <div class="options flex justify-around mt-[15px]">
+            <div
+              class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pr-[10px] pt-[5px] pb-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/reply.svg" alt="">1k
+            </div>
+            <div
+              class="repost w-fit h-fit hover:bg-green-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/repost.svg" alt="">50
+            </div>
+            <div
+              class="like w-fit h-fit hover:bg-pink-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/like.svg" alt="">20k
+            </div>
+            <div
+              class="view w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/view.svg" alt="">50k
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="save w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/save.svg" alt="">
+              </div>
+              <div
+                class="share w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/share.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="addPost flex text-white border-b-1 border-gray-700 mt-4">
+        <div class="profilePic ml-4 mr-2">
+          <img src="images/pranay.jpg" class=" w-[50px] h-[40px] rounded-full" alt="">
+        </div>
+        <div class="tweet mb-3">
+          <div class="nameBar flex justify-between w-full">
+            <div class="userInfo flex gap-1.5">
+              <div class="name font-bold ">Pranay</div>
+              <div class="username font-extralight text-gray-400">@TechNerd_pranay
+                ·
+                17h</div>
+            </div>
+            <div class="icons flex gap-1 mr-3">
+              <div class="grok"><img class="invert w-[1vw] h-[2.5vh]" src="icons/grok.svg" alt=""></div>
+              <div class="more"><img class="invert w-[1vw] h-[2.5vh]" src="icons/more2.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="tweetText font-normal leading-5">Day 125 of GFG 160 - 160 Days of Problem Solving! Problem Solved:
+            max profit. <div class="hashtags text-sky-500">@geeksforgeeks
+              #gfg160 #geekstreak2025 #CodingJourney #LearnInPublic #letsconnect</div>
+            <div class="imageContent"><img class="w-[30vw] rounded-2xl mt-[10px]" src="images/samplePranay.jpeg" alt="">
+            </div>
+          </div>
+          <div class="options flex justify-around mt-[15px]">
+            <div
+              class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pr-[10px] pt-[5px] pb-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/reply.svg" alt="">800
+            </div>
+            <div
+              class="repost w-fit h-fit hover:bg-green-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/repost.svg" alt="">70
+            </div>
+            <div
+              class="like w-fit h-fit hover:bg-pink-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2.5vw] h-[2.5vh]" src="icons/like.svg" alt="">20.7k
+            </div>
+            <div
+              class="view w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/view.svg" alt="">30k
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="save w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/save.svg" alt="">
+              </div>
+              <div
+                class="share w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/share.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="addPost flex text-white border-b-1 border-gray-700 mt-4">
+        <div class="profilePic ml-4 mr-2">
+          <img src="https://pbs.twimg.com/profile_images/1285738866658308096/0xdU8F-a_400x400.jpg"
+            class=" w-[90px] h-[40px] rounded-full" alt="">
+        </div>
+        <div class="tweet mb-3">
+          <div class="nameBar flex justify-between w-full">
+            <div class="userInfo flex gap-1.5">
+              <div class="name font-bold ">Chirag Bhardwaj</div>
+              <div class="username font-extralight text-gray-400">@akaChiragB
+                ·
+                Jul 18</div>
+            </div>
+            <div class="icons flex gap-1 mr-3">
+              <div class="grok"><img class="invert w-[1vw] h-[2.5vh]" src="icons/grok.svg" alt=""></div>
+              <div class="more"><img class="invert w-[1vw] h-[2.5vh]" src="icons/more2.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="tweetText font-normal leading-5">Planned to do DSA and CP in whole break but college placements
+            messed up my plans!
+            Should I start focusing on Dev and core subject for placements or continue with my DSA?</div>
+          <div class="options flex justify-around mt-[15px]">
+            <div
+              class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/reply.svg" alt="">2.3k
+            </div>
+            <div
+              class="reply w-fit h-fit hover:bg-green-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/repost.svg" alt="">50
+            </div>
+            <div
+              class="reply w-fit h-fit hover:bg-pink-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/like.svg" alt="">40k
+            </div>
+            <div
+              class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/view.svg" alt="">55.7k
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/save.svg" alt="">
+              </div>
+              <div
+                class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/share.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="addPost flex text-white border-b-1 border-gray-700 mt-4">
+        <div class="profilePic ml-4 mr-2">
+          <img src="https://pbs.twimg.com/profile_images/1888209050846044161/lVICo2O7_400x400.jpg"
+            class=" w-[50px] h-[40px] rounded-full" alt="">
+        </div>
+        <div class="tweet mb-3">
+          <div class="nameBar flex justify-between w-full">
+            <div class="userInfo flex gap-1.5">
+              <div class="name font-bold ">Ayush Deshmukh</div>
+              <div class="username font-extralight text-gray-400">@everywhereayush
+                ·
+                17h
+              </div>
+            </div>
+            <div class="icons flex gap-1 mr-3">
+              <div class="grok"><img class="invert w-[1vw] h-[2.5vh]" src="icons/grok.svg" alt=""></div>
+              <div class="more"><img class="invert w-[1vw] h-[2.5vh]" src="icons/more2.svg" alt=""></div>
+            </div>
+          </div>
+          <div class="tweetText font-normal leading-5">I need a domain for my agency website. What are some of the
+            alternatives of GoDaddy and hostinger?</div>
+          <div class="options flex justify-around mt-[15px]">
+            <div
+              class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/reply.svg" alt="">1k
+            </div>
+            <div
+              class="reply w-fit h-fit hover:bg-green-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/repost.svg" alt="">50
+            </div>
+            <div
+              class="reply w-fit h-fit hover:bg-pink-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/like.svg" alt="">20k
+            </div>
+            <div
+              class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px] content-center items-center text-xs text-gray-400">
+              <img class="w-[2vw] h-[2.5vh]" src="icons/view.svg" alt="">50k
+            </div>
+            <div class="flex gap-0.5">
+              <div
+                class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/save.svg" alt="">
+              </div>
+              <div
+                class="reply w-fit h-fit hover:bg-sky-950 hover:cursor-pointer flex rounded-full pt-[5px] pb-[5px] px-[5px]">
+                <img class="w-[2vw] h-[2.5vh]" src="icons/share.svg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-    <div class="thirdColoumn text-white  w-[35vw] h-[100vh] bg-black">
+    <div class="thirdColoumn fixed right-0 text-white  w-[35vw] h-[100vh] bg-black">
       <div class="search flex border-1 text-white border-gray-700 mt-2 ml-8 rounded-full w-[22vw] h-[5vh]">
         <div class="searchSvg invert"><img class="mt-3 ml-3 h-[2vh]" src="icons/search.svg" alt=""></div>
         <div class="searchText mt-2 ml-2 "> <input
