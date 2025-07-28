@@ -15,7 +15,7 @@ A pixel-perfect recreation of the **X (formerly Twitter)** web interface built w
 
 ---
 ## 🚀 Quick Preview
-<img width="1920" height="1200" alt="desktop-demo" src="https://github.com/user-attachments/assets/e5f525b2-c151-4382-a877-c004d49a857e" />
+<img width="1891" height="1029" alt="Screenshot 2025-07-28 173002" src="https://github.com/user-attachments/assets/9783caa9-5f38-44c1-873b-fff29dc44199" />
 
 
 ---
