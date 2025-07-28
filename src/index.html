@@ -9,10 +9,10 @@
 </head>
 
 <body class="bg-black">
-  <div class="mainContainer flex flex-row">
-    <div class="firstColoumn fixed w-[26vw] h-[100vh]  bg-black">
+  <div class="mainContainer grid grid-cols-1 md:grid-cols-[auto_1fr_auto] min-h-screen">
+    <div class="firstColoumn sticky bg-black">
       <ul class="items mx-[80px] border-1 w-[20vw] h-[100vh]">
-        <div class=" w-[18vw]  left-15 top-4">
+        <div class=" w-[18vw] ml-20  left-15 top-4">
           <li class="pb-2 ">
             <div
               class="logo pt-2 pb-6 items-center justify-center hover:bg-[rgba(48,48,48,0.44)] rounded-4xl h-[7vh] w-[4vw]">
@@ -89,10 +89,10 @@
             </div>
           </li>
         </div>
+      </ul>
     </div>
-    </ul>
-    <div
-      class="secondColoumn overflow-y-scroll scrollbar-none sticky left-90 w-[40vw] h-fit border-1 border-y border-gray-700 bg-black">
+
+    <div class="secondColoumn border-t-0 overflow-y-scroll scrollbar-none  h-fit border-1 border-y border-gray-700 bg-black">
       <div class="top border-b-[1px] border-gray-700 w-full h-[fit] flex text-white">
         <div class="foryou w-[50%] h-full">
           <div class=" text-center pt-[10px] pb-[10px] font-bold">For you</div>
@@ -132,7 +132,8 @@
       </div>
       <div class="addPost flex text-white border-b-1 border-gray-700 mt-4">
         <div class="profilePic ml-4 mr-2">
-          <img src="https://pbs.twimg.com/profile_images/1943620280527491073/eb3Y9psA_400x400.jpg" class=" w-[50px] h-[40px] rounded-full" alt="">
+          <img src="https://pbs.twimg.com/profile_images/1943620280527491073/eb3Y9psA_400x400.jpg"
+            class=" w-[50px] h-[40px] rounded-full" alt="">
         </div>
         <div class="tweet mb-3">
           <div class="nameBar flex justify-between w-full ">
@@ -182,7 +183,8 @@
       </div>
       <div class="addPost flex text-white border-b-1 border-gray-700 mt-4">
         <div class="profilePic ml-4 mr-2">
-          <img src="https://pbs.twimg.com/profile_images/1877962222753714176/wZZAaq9R_400x400.jpg" class=" w-[50px] h-[40px] rounded-full" alt="">
+          <img src="https://pbs.twimg.com/profile_images/1877962222753714176/wZZAaq9R_400x400.jpg"
+            class=" w-[45px] h-[40px] rounded-full" alt="">
         </div>
         <div class="tweet mb-3">
           <div class="nameBar flex justify-between w-full">
@@ -339,7 +341,7 @@
 
       </div>
     </div>
-    <div class="thirdColoumn fixed right-0 text-white  w-[35vw] h-[100vh] bg-black">
+    <div class="thirdColoumn sticky text-white bg-black mr-20">
       <div class="search flex border-1 text-white border-gray-700 mt-2 ml-8 rounded-full w-[22vw] h-[5vh]">
         <div class="searchSvg invert"><img class="mt-3 ml-3 h-[2vh]" src="icons/search.svg" alt=""></div>
         <div class="searchText mt-2 ml-2 "> <input
